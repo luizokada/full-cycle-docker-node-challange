@@ -7,7 +7,6 @@ Este projeto é um desafio do curso Full Cycle, focado em Docker, Node.js, MySQL
 ```
 ├── app/           # Código da aplicação Node.js
 ├── database/      # Scripts de inicialização do banco de dados
-├── mysql/         # Dados persistentes do MySQL
 ├── nginx/         # Configuração do Nginx
 ├── docker-compose.yml
 ```
