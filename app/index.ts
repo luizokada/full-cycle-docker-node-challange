@@ -2,6 +2,13 @@ import express from "express";
 import queryDatabase from "./queryPromise";
 
 export async function createApp() {
+  const createTable = `CREATE TABLE IF NOT EXISTS people(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+  )`;
+  await queryDatabase(createTable);
+
   const characters = [
     "Luke Skywalker",
     "Darth Vader",

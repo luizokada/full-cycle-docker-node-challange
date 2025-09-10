@@ -28,8 +28,7 @@ services:
       dockerfile: Dockerfile
     container_name: database
     volumes:
-      - ./mysql:/var/lib/mysql
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysql:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root
